@@ -4,7 +4,11 @@
 # 猜錯 要告訴她 比答案大/小
 # 印出猜出幾次
 import random
-r = random.randint(1, 10)
+start = input('請輸入猜數字遊戲開始值: ')
+end = input('請輸入猜數字遊戲結束值: ')
+start = int(start)
+end = int(end)
+r = random.randint(start, end)
 count = 0
 while True:
 	num = input('請猜數字: ')
